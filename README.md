@@ -28,6 +28,26 @@ The Option Pricing Library is a comprehensive tool for pricing derivative financ
 - `std::string dayOfWeek()`: Returns the day of the week as a string.
 - Various date manipulation and comparison functions (add, subtract, dateDifference, tradingDateDifference, dayOfTheWeek, isHoliday, isWeekDay, nextTradingDay, isLeapYear, isTradingDay, print, operators for increment and decrement, comparison operators).
 
+### DateCompact.hpp
+
+**Class: `DateCompact`**
+
+- `DateCompact(int year, int month, int day)`: Constructor for creating a date compactly with a specified year, month, and day.
+- `DateCompact(const DateCompact &src)`: Copy constructor for creating a new date compactly based on an existing one.
+- `~DateCompact()`: Destructor for cleaning up the compact date.
+- `DateCompact &operator=(const DateCompact &src)`: Assignment operator for assigning one compact date to another.
+- `void setYear(int y)`: Sets the year of the compact date.
+- `void setMonth(int m)`: Sets the month of the compact date.
+- `void setDay(int d)`: Sets the day of the compact date.
+- `int year()`: Returns the year of the compact date.
+- `int month()`: Returns the month of the compact date.
+- `int day()`: Returns the day of the compact date.
+- `void print()`: Prints the compact date.
+- `bool operator==(const DateCompact &d) const`: Equality comparison for compact dates.
+- `bool operator<(const DateCompact &d) const`: Less-than operator for compact dates.
+
+The `DateCompact` class is a memory-efficient implementation of date handling compared to the `Date` class.
+
 ### RandomWalkGenerator.hpp
 
 **Class: `RandomWalkGenerator`**
