@@ -20,7 +20,3 @@ TEST(GenericOptionTest, TestProfitAtExpiryPutOption) {
   EXPECT_DOUBLE_EQ(profit, 52.75 - 45.0 - 5);
 }
 
-int main(int argc, char** argv) {
-  ::testing::InitGoogleTest(&argc, argv);
-  return RUN_ALL_TESTS();
-}

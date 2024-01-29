@@ -11,6 +11,10 @@ include_directories(
 
 set(TEST_SOURCES
     testGenericOption.cpp
+    testRandomWalkGenerator.cpp
+    testDate.cpp
+    testDateCompact.cpp
+    testRunner.cpp
 )
 
 add_executable(OptionPricingTests ${TEST_SOURCES})
