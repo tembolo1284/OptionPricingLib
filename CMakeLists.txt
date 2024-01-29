@@ -11,6 +11,7 @@ set(SOURCES
     main.cpp
     src/RandomWalkGenerator.cpp
     src/Date.cpp
+    src/DateCompact.cpp
     src/GenericOption.cpp
 )
 
