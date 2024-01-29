@@ -15,7 +15,10 @@ set(SOURCES
     src/GenericOption.cpp
 )
 
-add_executable(OptionPricingLib ${SOURCES})
+# Create a library for the project's code
+add_library(OptionPricingLib STATIC ${SOURCES})
+
+add_executable(OptionPricingApp ${SOURCES})
 
 # Set the C++ compiler based on the COMPILER variable
 if(COMPILER STREQUAL "g++")
@@ -31,6 +34,10 @@ else()
 endif()
 
 message(STATUS "Using compiler: ${CMAKE_CXX_COMPILER}")
+
+enable_testing()
+
+add_subdirectory(test)
 
 # cmake -B build -DCOMPILER=g++
 # cmake -B build -DCOMPILER=clang++
